@@ -102,7 +102,7 @@ class MemberDetailActivity : AppCompatActivity() {
                 }
                 launch {
                     db.paymentDao().observeForMember(memberId).collect { payments ->
-                        paymentAdapter.submit(payments.map {
+                        paymentAdapter.submitList(payments.map {
                             PaymentAdapter.Row(it, currentMember?.name.orEmpty())
                         })
                         binding.noPayments.visibility =

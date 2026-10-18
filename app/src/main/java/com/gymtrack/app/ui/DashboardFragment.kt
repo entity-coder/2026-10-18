@@ -75,7 +75,7 @@ class DashboardFragment : Fragment() {
                 launch {
                     db.memberDao().expiringSoon(today, soonEnd).collect { members ->
                         binding.expiringSoonValue.text = members.size.toString()
-                        adapter.submit(members)
+                        adapter.submitList(members)
                         binding.expiringEmpty.visibility =
                             if (members.isEmpty()) View.VISIBLE else View.GONE
                     }

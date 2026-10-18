@@ -72,7 +72,7 @@ class MembersFragment : Fragment() {
                         if (q.isBlank()) db.memberDao().observeAll()
                         else db.memberDao().search(q.trim())
                     }.collect { members ->
-                        adapter.submit(members.map {
+                        adapter.submitList(members.map {
                             MemberAdapter.Row(it, MembershipCalculator.statusOf(it, today))
                         })
                         binding.emptyHint.visibility =

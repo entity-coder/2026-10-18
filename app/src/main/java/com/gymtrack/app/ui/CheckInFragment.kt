@@ -84,7 +84,7 @@ class CheckInFragment : Fragment() {
                         val checkedIn = db.checkInDao().checkedInMemberIds(today)
                         combine(members, checkedIn) { list, done -> list to done }
                     }.collect { (members, checkedInIds) ->
-                        adapter.submit(members.map {
+                        adapter.submitList(members.map {
                             MemberAdapter.Row(
                                 member = it,
                                 status = MembershipCalculator.statusOf(it, today),
@@ -97,7 +97,7 @@ class CheckInFragment : Fragment() {
                     db.checkInDao().observeForDay(today).collect { rows ->
                         binding.todayCount.text =
                             getString(R.string.today_checkins_format, rows.size)
-                        todayAdapter.submit(rows)
+                        todayAdapter.submitList(rows)
                     }
                 }
             }

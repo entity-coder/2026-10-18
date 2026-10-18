@@ -55,7 +55,7 @@ class PaymentsFragment : Fragment() {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 launch {
                     db.memberDao().defaulters(today).collect { members ->
-                        defaulterAdapter.submit(members.map {
+                        defaulterAdapter.submitList(members.map {
                             MemberAdapter.Row(it, MembershipCalculator.statusOf(it, today))
                         })
                         binding.noDefaulters.visibility =
@@ -71,7 +71,7 @@ class PaymentsFragment : Fragment() {
                         val names = members.associate { it.id to it.name }
                         payments.map { PaymentAdapter.Row(it, names[it.memberId].orEmpty()) }
                     }.collect { rows ->
-                        paymentAdapter.submit(rows)
+                        paymentAdapter.submitList(rows)
                         binding.noPayments.visibility =
                             if (rows.isEmpty()) View.VISIBLE else View.GONE
                     }
