@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GymTrack</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_members">Members</string>
+    <string name="nav_checkin">Check-in</string>
+    <string name="nav_payments">Fees</string>
+
+    <!-- Dashboard -->
+    <string name="stat_active_members">Active members</string>
+    <string name="stat_fees_month">Fees this month</string>
+    <string name="stat_today_checkins">Today\'s check-ins</string>
+    <string name="stat_expiring_soon">Expiring soon</string>
+    <string name="expiring_soon_title">Expiring in the next 7 days</string>
+    <string name="expiring_empty">No memberships expiring in the next 7 days.</string>
+    <string name="export_backup">Export backup (CSV)</string>
+    <string name="expiring_detail_format">Valid till %1$s · %2$d days left</string>
+
+    <!-- Members tab -->
+    <string name="search_members_hint">Search name or phone</string>
+    <string name="empty_members_hint">No members yet.\nTap + to add your first member.</string>
+    <string name="add_member">Add member</string>
+    <string name="edit_member">Edit member</string>
+    <string name="member_saved">Member saved.</string>
+
+    <!-- Check-in tab -->
+    <string name="today_checkins_format">Today\'s check-ins: %1$d</string>
+    <string name="check_in">Check in</string>
+    <string name="checked_in">Checked in</string>
+    <string name="checked_in_format">%1$s checked in</string>
+
+    <!-- Member rows -->
+    <string name="plan_badge_format">%1$s · %2$s</string>
+    <string name="status_ok">OK</string>
+    <string name="status_expiring_format">Expires in %1$d d</string>
+    <string name="status_fee_due">FEE DUE</string>
+
+    <!-- Member detail -->
+    <string name="detail_plan_format">%1$s plan · %2$s</string>
+    <string name="record_payment">Record payment</string>
+    <string name="edit">Edit</string>
+    <string name="payment_history_title">Payment history</string>
+    <string name="no_payments">No payments recorded yet.</string>
+    <string name="delete_title">Delete member?</string>
+    <string name="delete_message">Delete %1$s and all their payments and check-ins? This cannot be undone.</string>
+
+    <!-- Fees tab -->
+    <string name="defaulters_title">Fee defaulters</string>
+    <string name="no_defaulters">No defaulters — everyone is paid up.</string>
+    <string name="payment_saved_format">%1$s recorded for %2$s</string>
+
+    <!-- Dialogs -->
+    <string name="hint_name">Name</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_fee">Plan fee (₹)</string>
+    <string name="label_plan">Plan</string>
+    <string name="pick_photo">Add photo</string>
+    <string name="label_member">Member</string>
+    <string name="hint_amount">Amount (₹)</string>
+    <string name="hint_note">Note (optional)</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+    <!-- Validation -->
+    <string name="error_name_required">Please enter a name.</string>
+    <string name="error_phone_required">Please enter a phone number.</string>
+    <string name="error_fee_positive">Fee must be more than 0.</string>
+    <string name="error_no_members">Add a member first.</string>
+</resources>

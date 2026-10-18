@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Membership status colors -->
+    <color name="status_safe">#2E7D32</color>
+    <color name="status_at_risk">#F9A825</color>
+    <color name="status_below">#C62828</color>
+
+    <!-- App primary (burnt orange — gym energy) -->
+    <color name="color_primary">#C2410C</color>
+    <color name="color_primary_dark">#7C2D12</color>
+    <color name="color_accent">#FB923C</color>
+
+    <!-- Launcher icon background -->
+    <color name="ic_launcher_background">#C2410C</color>
+</resources>
